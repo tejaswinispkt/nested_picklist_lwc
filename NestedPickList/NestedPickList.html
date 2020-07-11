@@ -1,0 +1,153 @@
+<template>
+    <!--A Dropdown-->
+    <label>A</label>
+    <dropdown class="A_dropdown dropdown">
+        <div class="slds-grid slds-gutters slds-wrap">
+            <div class="slds-col slds-size_1-of-1 slds-large-size_12-of-12">
+                <select>
+                    <template for:each={ADropdownDetails} for:item="A_pick">
+                        <option key={A_pick} value={A_pick}>{A_pick}</option>
+                    </template>
+                </select>
+
+                <div class="select-menu">
+                    <button class="select-option" onclick={toggleADropdown}>
+                        <div class="label">
+                            <span>{selectedA}</span>
+                            <i class="icon icon-dropdown"></i>
+                        </div>
+                    </button>
+
+                    <div class="select-dropdown">
+                        <c-jli-picklist-search-bar drop-down-details={ADropdownDetails}
+                            onprogressvaluechange={handleAValueChange}></c-jli-picklist-search-bar>
+                        <div class="items">
+                            <ul>
+                                <template for:each={selectedADetails} for:item="value">
+                                    <li key={value} value={value}>
+                                        <button onclick={chooseAValue}>{value}</button>
+                                    </li>
+                                </template>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </dropdown>
+    <div class="slds-border_bottom" style="margin-bottom:30px"></div>
+
+    <!--B Dropdown-->
+    <label>B</label>
+    <dropdown class="B_dropdown dropdown">
+        <div class="slds-grid slds-gutters slds-wrap">
+            <div class="slds-col slds-size_1-of-1 slds-large-size_12-of-12">
+                <select>
+                    <template for:each={BDropdownDetails} for:item="B_pick">
+                        <option key={B_pick} value={B_pick}>{B_pick}</option>
+                    </template>
+                </select>
+
+                <div class="select-menu">
+                    <button class="select-option" onclick={toggleBDropdown}>
+                        <div class="label">
+                            <span>{selectedB}</span>
+                            <i class="icon icon-dropdown"></i>
+                        </div>
+                    </button>
+
+                    <div class="select-dropdown">
+                        <c-jli-picklist-search-bar drop-down-details={BDropdownDetails}
+                            onprogressvaluechange={handleBValueChange}></c-jli-picklist-search-bar>
+                        <div class="items">
+                            <ul>
+                                <template for:each={selectedBDetails} for:item="value">
+                                    <li key={value} value={value}>
+                                        <button onclick={chooseBValue}>{value}</button>
+                                    </li>
+                                </template>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </dropdown>
+    <div class="slds-border_bottom" style="margin-bottom:30px"></div>
+
+    <!--C Dropdown-->
+    <label>C</label>
+    <dropdown class="C_dropdown dropdown">
+        <div class="slds-grid slds-gutters slds-wrap">
+            <div class="slds-col slds-size_1-of-1 slds-large-size_12-of-12">
+                <select>
+                    <template for:each={CDropdownDetails} for:item="C_pick">
+                        <option key={C_pick} value={C_pick}>{C_pick}</option>
+                    </template>
+                </select>
+
+                <div class="select-menu">
+                    <button class="select-option" onclick={toggleCDropdown}>
+                        <div class="label">
+                            <span>{selectedC}</span>
+                            <i class="icon icon-dropdown"></i>
+                        </div>
+                    </button>
+
+                    <div class="select-dropdown">
+                        <c-jli-picklist-search-bar drop-down-details={CDropdownDetails}
+                            onprogressvaluechange={handleCValueChange}></c-jli-picklist-search-bar>
+                        <div class="items">
+                            <ul>
+                                <template for:each={selectedCDetails} for:item="value">
+                                    <li key={value} value={value}>
+                                        <button onclick={chooseCValue}>{value}</button>
+                                    </li>
+                                </template>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </dropdown>
+    <div class="slds-border_bottom" style="margin-bottom:30px"></div>
+
+    <!--D Dropdown-->
+    <label>D</label>
+    <dropdown class="D_dropdown dropdown">
+        <div class="slds-grid slds-gutters slds-wrap">
+            <div class="slds-col slds-size_1-of-1 slds-large-size_12-of-12">
+                <select>
+                    <template for:each={DDropdownDetails} for:item="D_pick">
+                        <option key={D_pick} value={D_pick}>{D_pick}</option>
+                    </template>
+                </select>
+
+                <div class="select-menu">
+                    <button class="select-option" onclick={toggleDDropdown}>
+                        <div class="label">
+                            <span>{selectedD}</span>
+                            <i class="icon icon-dropdown"></i>
+                        </div>
+                    </button>
+
+                    <div class="select-dropdown">
+                        <c-jli-picklist-search-bar drop-down-details={DDropdownDetails}
+                            onprogressvaluechange={handleDValueChange}></c-jli-picklist-search-bar>
+                        <div class="items">
+                            <ul>
+                                <template for:each={selectedDDetails} for:item="value">
+                                    <li key={value} value={value}>
+                                        <button onclick={chooseDValue}>{value}</button>
+                                    </li>
+                                </template>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </dropdown>
+    <div class="slds-border_bottom" style="margin-bottom:30px"></div>
+</template>

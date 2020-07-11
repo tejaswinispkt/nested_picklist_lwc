@@ -1,0 +1,49 @@
+.card {
+    display: contents;
+    position: relative;
+    top: 0;
+    max-width: 330px;
+    height: 245px;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: height .25s ease-in-out;
+    -webkit-font-smoothing: antialiased;
+    font-family: var(--myriad-pro-semibold);
+}
+
+.card.open {
+    height: 320px;
+}
+
+.card header {
+    height: 60px;
+}
+
+.card .card-content {
+    padding: 30px 20px;
+}
+
+.card .miles {
+    font-weight: 600;
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.card .address {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.card .is-preferred {
+    font-size: 14px;
+}
+
+.card .card-content .icon-pencil {
+    font-size: 24px;
+}
+
+@media only screen and (min-width: 1090px) {
+    .card {
+        min-width: 330px;
+    }
+}
