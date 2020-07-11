@@ -24,7 +24,7 @@ Lets suppose we have 2 dropdowns *X* and *Y*, where *Y* is dependent on *X*. *X*
 
 For X Dropdown :
 
-```
+```javascript
 getXLists(){
    getAList({})
             .then(result => {
@@ -56,7 +56,7 @@ chooseXValue(e) {
 ```
 For Y Dropdown :
 
-```
+```javascript
 getYLists(){
    getYList({
       X: this.selectedX
@@ -90,7 +90,9 @@ chooseYValue(e) {
 ```
 ## Need Help?
 
-- For Detailed documentation on LWC visit [Learning Salesforce Lightning components] (https://developer.salesforce.com/docs/atlas.en-us.206.0.lightning.meta/lightning/intro_framework.htm)
+- For Detailed documentation on LWC visit [Learning Salesforce Lightning components](https://developer.salesforce.com/docs/atlas.en-us.206.0.lightning.meta/lightning/intro_framework.htm)
+- File an issue via GitHub Issues
+- Check previous questions or ask new ones on StackOverflow using `apex` and `lwc` tags.
 
 
 
